@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>our little universe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- ================= HERO ================= -->
+<section id="hero" class="section">
+  <div class="hero-inner">
+    <p class="eyebrow">a little universe, made for</p>
+    <h1 id="her-name" class="hero-name">—</h1>
+    <p class="hero-sub">since <span id="start-date-text"></span></p>
+
+    <div class="counter">
+      <div class="counter-num" id="day-count">0</div>
+      <div class="counter-label">days of us</div>
+    </div>
+
+    <button class="scroll-hint" id="scroll-hint" aria-label="Scroll down">
+      begin
+      <span class="scroll-chevron"></span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz" class="section hidden-section">
+  <div class="section-inner">
+    <p class="eyebrow">part one</p>
+    <h2 class="section-title">tell me about your universe</h2>
+    <p class="section-sub">answer honestly bae, there's no wrong star to pick.</p>
+
+    <div class="quiz-box" id="quiz-box">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULT ================= -->
+<section id="result" class="section hidden-section">
+  <div class="section-inner">
+    <p class="eyebrow">your result</p>
+    <h2 class="section-title" id="result-title">—</h2>
+    <p class="result-text" id="result-text"></p>
+    <button class="btn" id="to-letter-btn">there's something for you next →</button>
+  </div>
+</section>
+
+<!-- ================= LETTER ================= -->
+<section id="letter" class="section hidden-section">
+  <div class="section-inner">
+    <p class="eyebrow">part two</p>
+    <h2 class="section-title">a letter, sealed for you</h2>
+
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="envelope-flap"></div>
+        <div class="letter-paper" id="letter-paper">
+          <p id="letter-text"><!--
+            ============================================
+            YOUR LETTER GOES HERE.
+            Edit script.js -> CONFIG.LETTER (near the top).
+            This paragraph is filled in by JS, not this file.
+            ============================================
+          --></p>
+        </div>
+        <button class="wax-seal" id="wax-seal" type="button" aria-expanded="false">open</button>
+      </div>
+    </div>
+    <p class="envelope-hint" id="envelope-hint">tap the seal to open it</p>
+  </div>
+</section>
+
+<!-- ================= REASONS ================= -->
+<section id="reasons" class="section hidden-section">
+  <div class="section-inner">
+    <p class="eyebrow">part three</p>
+    <h2 class="section-title">a few reasons, out of many</h2>
+    <p class="section-sub">flip a card.</p>
+
+    <div class="reasons-grid" id="reasons-grid"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
